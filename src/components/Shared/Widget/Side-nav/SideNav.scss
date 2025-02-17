@@ -1,0 +1,13 @@
+.releasy-logo-wrapper {
+  svg {
+    max-width: 112px;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .releasy-logo {
+    @media (max-width: 769.9px) and (min-width: 480.9px) {
+      display: none;
+    }
+  }
+}

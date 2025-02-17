@@ -1,0 +1,17 @@
+.registration-form-container {
+  .registration-form {
+    max-height: 80%;
+    max-width: 50%;
+    height: 100%;
+    width: 500px;
+    border-radius: 10px;
+  }
+  .signup-header {
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--primary-color);
+  }
+  .signup-started {
+    color: var(--primary-color);
+  }
+}

@@ -1,0 +1,86 @@
+.modal {
+  position: fixed;
+  z-index: 1002;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+
+  &-overlay {
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--overlay-bg);
+    box-shadow: 0px 10px 20px var(--overlay-shadow);
+  }
+
+  &-content {
+    position: relative;
+    z-index: 1002;
+    max-width: 90vw;
+    max-height: 100%;
+    width: 550px;
+    background-color: var(--white);
+    border-radius: 5px;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  &-body {
+    margin: 0;
+    background: var(--modal-body-bg);
+    border-radius: 0px 0px 8px 8px;
+    max-height: 75vh !important;
+    overflow: auto !important;
+    padding: 8px !important;
+    padding-bottom: 0 !important;
+  }
+
+  &-header {
+    padding: 15px 0px !important;
+    background-color: var(--primary-color);
+    border: 5px;
+    font-family: "Poppins";
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--white);
+
+    &-title {
+      margin: 0;
+    }
+  }
+
+  &-close {
+    font-size: 22px;
+    color: var(--white);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  .modal-header::before,
+  .modal-header::after {
+    content: initial !important;
+  }
+
+  .modal-logo-header-content {
+    svg path {
+      fill: var(--primary-color);
+    }
+  }
+}
+
+.modal-open {
+  overflow-y: hidden !important;
+}

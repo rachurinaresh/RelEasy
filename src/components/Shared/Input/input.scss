@@ -1,0 +1,182 @@
+.input-group {
+  --error: #ff5f5f;
+  --input-placeholder: #ababab;
+  height: 77px;
+  align-content: start !important;
+  --d-border-radius: 4px;
+  input:focus-visible {
+    outline: none;
+  }
+  label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    color: var(--primary-color);
+    height: 18px;
+    .required {
+      color: var(--error);
+      margin-left: 0.2rem;
+    }
+  }
+  .input-control {
+    height: var(--d-input-height);
+    border: 1px solid var(--input-border);
+    width: 100%;
+    height: 40px;
+    border-radius: var(--d-border-radius);
+    font-size: 12px;
+    line-height: 1.2;
+    color: var(--input-color);
+    background-color: var(--input-bg);
+    display: flex;
+    position: relative;
+    border: var(--primary-color) 1px solid;
+    border-radius: 4px;
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    &.error {
+      border: var(--error) 1px solid;
+      border-radius: var(--d-border-radius) !important;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: calc(100% - 16px);
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 1px);
+      background-color: var(--error);
+      border-radius: var(--d-border-radius) var(--d-border-radius) 0 0;
+      display: none;
+    }
+
+    &:focus-within {
+      outline: none;
+    }
+
+    &:hover {
+      background: var(--input-hover);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    input[type="time"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"],
+    select,
+    textarea,
+    .input {
+      font-family: inherit;
+      flex-grow: 1;
+      width: 100%;
+      font-weight: 400;
+      padding: 0 20px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #ababab;
+        opacity: 1;
+        /* Firefox */
+      }
+
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #ababab;
+      }
+
+      &::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #ababab;
+      }
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+    }
+    &.input-disabled {
+      opacity: 0.5;
+    }
+  }
+  .error-message {
+    color: var(--error);
+    font-size: 10px;
+    margin-top: 0.2rem;
+  }
+}
+.MuiButton-root {
+  background-color: var(--primary-color);
+}
+.affix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  white-space: nowrap;
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+    margin: 1px;
+  }
+
+  &.affix-img {
+    height: var(--d-input-height);
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &.affix-clear {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--input-bg);
+    &.disabled {
+      background-color: rgba(239, 239, 239, 0.3);
+      cursor: auto;
+    }
+    svg {
+      width: 0.7rem;
+      height: 0.7rem;
+    }
+  }
+}
+
+.help-icon {
+  position: relative;
+  display: inline-flex;
+  padding-left: 3px;
+
+  .help-info {
+    display: none;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-size: 12px;
+    line-height: 1.2;
+    color: var(--white);
+    box-shadow: var(--dropdown-shadow);
+    transform: translateX(-35%);
+    bottom: 24px;
+    position: absolute;
+    width: max-content;
+    max-width: 300px;
+    z-index: 1000;
+  }
+
+  &:hover .help-info {
+    display: block;
+  }
+}

@@ -1,0 +1,33 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  color: var(--font-primary);
+  background-color: var(--main-bg);
+  font-family: "Poppins", sans-serif !important;
+  overflow: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  overflow: hidden;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+*:focus {
+  outline: none;
+}

@@ -1,0 +1,15 @@
+export const API_CONSTANTS = {
+  BASE_URL: process.env.REACT_APP_API_BASE_URL,
+  GET_PMT_MASTER_DATA: "/PMT/GetPMTMasterData?userId=",
+  GET_PMT_CONFIG_DETAILS: "/PMT/GetPMTConfigDetails?pmtConfigId=",
+  GET_PMT_ORGANIZATIONS: "/PMT/GetPMTOrganizations?pmtConfigId=",
+  SAVE_PMT_CONFIG_DETAILS: "/PMT/SavePMTConfigDetails",
+  GENERATE_PROJECT_RELEASE_NOTES: "/Project/GenerateProjectReleaseNotes",
+  GET_PROJECT_ISSUE_TYPES: "/Project/GetProjectIssueTypes",
+  GET_PROJECT_LABELS: "/Project/GetProjectLabels",
+  DOWNLOAD_RELEASE_NOTES: "/Project/DownloadReleaseNotes",
+  SAVE_ORGANIZATION: "/Organization/SaveOrganization",
+  GET_ORGANIZATION_PROJECTS: "/Project/GetAllPMTProjects?organizationId=",
+  AUTHORIZE: "/User/Authorize",
+  REGISTER: "/User/RegisterUser",
+};

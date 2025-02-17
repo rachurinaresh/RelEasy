@@ -1,0 +1,22 @@
+//Button
+.MuiButton-root.MuiButtonBase-root {
+  text-transform: initial;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--white);
+  &.MuiButton-outlined {
+    color: var(--primary-color);
+  }
+}
+
+.MuiFormControlLabel-label {
+  font-size: 14px !important;
+}
+
+.MuiSelect-multiple {
+  font-size: 14px !important;
+}
+
+.MuiInputLabel-shrink {
+  font-size: 12px !important;
+}
