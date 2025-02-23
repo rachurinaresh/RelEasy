@@ -1,5 +1,5 @@
 export const API_CONSTANTS = {
-  BASE_URL: process.env.REACT_APP_API_BASE_URL,
+  BASE_URL: "https://localhost:7017/api",
   GET_PMT_MASTER_DATA: "/PMT/GetPMTMasterData?userId=",
   GET_PMT_CONFIG_DETAILS: "/PMT/GetPMTConfigDetails?pmtConfigId=",
   GET_PMT_ORGANIZATIONS: "/PMT/GetPMTOrganizations?pmtConfigId=",
