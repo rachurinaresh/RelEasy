@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelEasy.API", "RelEasy.API\RelEasy.API.csproj", "{5C28419B-7FE7-4CC9-AED9-F0DB5A24F7FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelEasy.Authentication", "RelEasy.Authentication\RelEasy.Authentication.csproj", "{BBF62C0F-076D-4C76-A1B7-77BBA2D27C8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C28419B-7FE7-4CC9-AED9-F0DB5A24F7FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C28419B-7FE7-4CC9-AED9-F0DB5A24F7FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C28419B-7FE7-4CC9-AED9-F0DB5A24F7FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C28419B-7FE7-4CC9-AED9-F0DB5A24F7FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF62C0F-076D-4C76-A1B7-77BBA2D27C8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF62C0F-076D-4C76-A1B7-77BBA2D27C8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF62C0F-076D-4C76-A1B7-77BBA2D27C8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF62C0F-076D-4C76-A1B7-77BBA2D27C8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9A4D655-3A3A-4E05-A2EF-484B1D8ACDD4}
+	EndGlobalSection
+EndGlobal
